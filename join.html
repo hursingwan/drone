@@ -102,7 +102,60 @@
     </div>
     <!-- Header End -->
 
-
+<div class="login-wrap">
+  <div class="login-html">
+    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+    <div class="login-form">
+      <div class="sign-in-htm">
+        <div class="group">
+          <label for="user" class="label">Username</label>
+          <input id="user" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Password</label>
+          <input id="pass" type="password" class="input" data-type="password">
+        </div>
+        <div class="group">
+          <input id="check" type="checkbox" class="check" checked>
+          <label for="check"><span class="icon"></span> Keep me Signed in</label>
+        </div>
+        <div class="group">
+          <input type="submit" class="button" value="Sign In">
+        </div>
+        <div class="hr"></div>
+        <div class="foot-lnk">
+          <a href="#forgot">Forgot Password?</a>
+        </div>
+      </div>
+      <div class="sign-up-htm">
+        <div class="group">
+          <label for="user" class="label">Username</label>
+          <input id="user" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Password</label>
+          <input id="pass" type="password" class="input" data-type="password">
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Repeat Password</label>
+          <input id="pass" type="password" class="input" data-type="password">
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Email Address</label>
+          <input id="pass" type="text" class="input">
+        </div>
+        <div class="group">
+          <input type="submit" class="button" value="Sign Up">
+        </div>
+        <div class="hr"></div>
+        <div class="foot-lnk">
+          <label for="tab-1">Already Member?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Hero Start -->
     <div class="container-fluid bg-primary p-5 bg-hero mb-5">
         <div class="row py-5">
@@ -113,38 +166,7 @@
             </div>
         </div>
     </div>
-
-    <h2>회원가입</h2>
-    <form action="/register" method="post">
-        <label for="id">User ID:</label><br>
-        <input type="text" id="id" name="id" required><br>
-
-        <label for="password">User PW:</label><br>
-        <input type="password" id="password" name="password" required><br>
-
-        <label for="confirm_password">Check PW:</label><br>
-        <input type="password" id="confirm_password" name="confirm_password" required><br>
-
-        <label for="address">Address:</label><br>
-        <input type="text" id="address" name="address" required><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-
-        <label for="phone">Phone Number:</label><br>
-        <input type="text" id="phone" name="phone" required><br>
-
-        <label for="qualification">Kind of Certificate:</label><br>
-        <select id="qualification" name="qualification">
-            <option value="자격증 종류 1">Type 1</option>
-            <option value="자격증 종류 2">Type 2</option>
-            <option value="자격증 종류 3">Type 3</option>
-            <option value="자격증 종류 4">Type 4</option>
-            <option value="자격증 종류 5">Not held</option>
-            <!-- 다른 자격증 종류 옵션들 추가 -->
-        </select><br><br>
-
-        <input type="submit" value="가입하기">
-    </form>
+    
 </body>
+    
 </html>
